@@ -6,12 +6,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="api" />
+        <module name="service-2" />
+        <module name="db" />
+      </profile>
+      <profile name="Annotation profile for App" enabled="true">
+        <sourceOutputDir name="../service-2/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../service-2/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
         <module name="service" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="api" target="16" />
-      <module name="db" target="16" />
-    </bytecodeTargetLevel>
   </component>
 </project>
